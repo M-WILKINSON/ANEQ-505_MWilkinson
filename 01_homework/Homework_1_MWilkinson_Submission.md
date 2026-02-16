@@ -6,3 +6,19 @@ Step 2. Clicked on "open in terminal", so it was already in the correct cow dire
 ```
 cd /scratch/alpine/c832787271@colostate.edu/cow
 ```
+
+Step 3. Created my sub-directories
+```
+mkdir slurm
+mkdir taxonomy
+mkdir tree
+mkdir taxaplots
+mkdir dada2
+mkdir demux
+mkdir metadata
+mkdir core_metrics
+
+ls
+```
+
+Step 4. Upload metadata files (cow_barcodes.txt, cow_metadata.txt)
