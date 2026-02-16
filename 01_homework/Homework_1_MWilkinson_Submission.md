@@ -21,4 +21,15 @@ mkdir core_metrics
 ls
 ```
 
-Step 4. Upload metadata files (cow_barcodes.txt, cow_metadata.txt)
+Step 4. Upload metadata files (cow_barcodes.txt, cow_metadata.txt) in OnDemand using the upload files button after navigating to the metadata sub folder. 
+
+Step 5 & 6. Opened a new terminal in the cow directory and copied the raw sequencing files from shared public folder. 
+```
+cp -r /pl/active/courses/2024_summer/maw_2024/raw_reads .
+```
+
+Step 5. Launch interactive session and load qiime2
+```
+ainteractive --ntasks=6 --time=02:00:00
+```
+
