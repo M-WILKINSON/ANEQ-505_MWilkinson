@@ -31,5 +31,17 @@ cp -r /pl/active/courses/2024_summer/maw_2024/raw_reads .
 Step 5. Launch interactive session and load qiime2
 ```
 ainteractive --ntasks=6 --time=02:00:00
+module purge
+module load qiime2/2024.10_amplicon
 ```
 
+Step 6. Import the sequences/reads into a Qiime2-readable format (.qza).
+```
+qiime tools import \--type EMPPairedEndSequences \--input-path raw_reads \--output-path cow_reads.qza
+```
+
+Step 7. Demultiplex the reads by submitting a job
+a. Navigated to the slurm directory in Alpine in OnDemand and created a new file called demux.sh, then ran demultiplexing command:
+```
+
+```
