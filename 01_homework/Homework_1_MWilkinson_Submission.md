@@ -75,4 +75,32 @@ dos2unix demux.sh
 sbatch demux.sh
 ```
 
-Step 8. 
+Step 8. I reviewed the interactive quality plot in qiime2 view and for the forward reads quality scores looked good (~30), and for reverse only 1 fell significantly below 30 (13) and that was after 250, therefore, I decided to use 250 as my threshold #. 
+```
+cd /scratch/alpine/c832787271@colostate.edu/cow/dada2
+
+qiime dada2 denoise-paired \--i-demultiplexed-seqs ../demux/cow_demux.qza \--p-trim-left-f 250 \--p-trim-left-r 250 \--p-trunc-len-f 250 \--p-trunc-len-r 250 \--o-representative-sequences cow_seqs_dada2.qza \--o-denoising-stats cow_dada2_stats.qza \--o-table cow_table_dada2.qza
+
+#Visualize the denoising results:
+qiime metadata tabulate \--m-input-file cow_dada2_stats.qza \--o-visualization YOUR_OUTPUT_FILENAME_HERE.qzv
+
+qiime feature-table summarize \--i-table cow_table_dada2.qza \--m-sample-metadata-file ../metadata/cow_metadata.txt \--o-visualization YOUR_OUTPUT_FILENAME_HERE.qzv
+
+qiime feature-table tabulate-seqs \--i-data cow_seqs_dada2.qza \--o-visualization YOUR_OUTPUT_FILENAME_HERE.qzv
+```
+
+Answers to questions:
+Briefly **describe** the key information from each denoising output file:
+
+1. Representative Sequences
+2. Denoising Stats
+3. Denoised Table
+
+**Answer the following questions:**
+
+1. Where does the median Q-score begin to dip below Q30 for the forward reads and the reverse reads?
+2. What is the mean reads per sample?
+3. How long are the reads?
+4. What is the maximum length of all your sequences?
+5. Which sample (not including extraction controls starting with EC) lost the highest % of reads?
+6. Why did you chose to trim or truncate where you did?
