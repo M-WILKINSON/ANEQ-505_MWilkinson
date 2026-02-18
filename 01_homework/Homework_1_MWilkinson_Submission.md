@@ -96,7 +96,7 @@ Briefly **describe** the key information from each denoising output file:
 	 Sequence Count: 4,653
 	 Mean Length: 253.34
 	 SD: 6.15
-2. Denoising Stats 
+2. Denoising Stats (cow_dada2_stats.qza)
 3. Denoised Table (cow_table_dada2.qzv)
 	Number of samples: 147
 	Number of features: 4,653
