@@ -102,6 +102,7 @@ Briefly **describe** the key information from each denoising output file:
 	Number of features: 4,653
 	Total Frequency: 1,634,012
 	Median Frequency: 8,854
+To summarize, after the DADA2 denoising step, 4,653 ASVs were identified across 147 samples. Representative sequences had a mean length of 253 bp with low variation (SD = 6.15), indicating consistent trimming, and the feature table contained 1,634,012 total reads with a median sequencing depth of 8,854 reads per sample, suggesting sufficient coverage for downstream diversity analyses.
 
 **Answer the following questions:**
 
