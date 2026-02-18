@@ -8,3 +8,5 @@ The main result of this figure is that some microbial strains are shared between
 In the context of the paper’s results, this figure shows that maternal transmission contributes to infant microbiome assembly but does not fully/definitively determine it. Infants must also acquire microbes from their environment. This figure is needed/helpful because it provides strain-level evidence about how the infant microbiome is assembled, helping the authors move beyond just describing microbiome differences across lifestyles to more clearly understanding the mechanisms of microbiome assembly. 
 
 These findings may guide future researchers in refining questionnaires to identify at-risk workers and inform targeted interventions to enhance occupational health.
+
+2. 
