@@ -103,4 +103,4 @@ Briefly **describe** the key information from each denoising output file:
 3. How long are the reads? 251 nts
 4. What is the maximum length of all your sequences? 43,963
 5. Which sample (not including extraction controls starting with EC) lost the highest % of reads? Position 251.
-6. Why did you chose to trim or truncate where you did? After reviewing the interactive quality plot in qiime2 view and for the forward reads quality scores looked good (~30), and for reverse only 1 fell significantly below 30 (13) and that was after 250, therefore, I decided to use 250 as my threshold #.
+6. Why did you chose to trim or truncate where you did? After reviewing the interactive quality plot in qiime2 view and for the forward reads quality scores looked good (~30), and for reverse only 1 fell significantly below 30 (13) and that was after 250, therefore, I decided to use 250 as my threshold #. 
