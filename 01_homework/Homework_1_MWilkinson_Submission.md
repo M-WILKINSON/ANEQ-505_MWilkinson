@@ -91,7 +91,8 @@ qiime feature-table tabulate-seqs \--i-data cow_seqs_dada2.qza \--o-visualizatio
 
 Answers to questions:
 Briefly **describe** the key information from each denoising output file:
- *I have not been able to successfully run the denoising job*
+ 
+ Note: I have not been able to successfully run the denoising job
 1. Representative Sequences
 2. Denoising Stats
 3. Denoised Table
