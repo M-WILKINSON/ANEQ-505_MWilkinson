@@ -92,9 +92,16 @@ qiime feature-table tabulate-seqs \--i-data cow_seqs_dada2.qza \--o-visualizatio
 Answers to questions:
 Briefly **describe** the key information from each denoising output file:
  
-1. Representative Sequences
-2. Denoising Stats
-3. Denoised Table
+1. Representative Sequences (cow_seqs_dada2.qzv)
+	 Sequence Count: 4,653
+	 Mean Length: 253.34
+	 SD: 6.15
+2. Denoising Stats 
+3. Denoised Table (cow_table_dada2.qzv)
+	Number of samples: 147
+	Number of features: 4,653
+	Total Frequency: 1,634,012
+	Median Frequency: 8,854
 
 **Answer the following questions:**
 
