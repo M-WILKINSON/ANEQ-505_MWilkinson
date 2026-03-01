@@ -8,7 +8,7 @@ sinteractive --reservation=aneq505 --time=02:00:00 --partition=amilan --nodes=1 
 
 1. Load qiime2 in a terminal session after you go into the taxonomy folder
 ```
-cd /scratch/alpine/c832787271@colostate.edu/decomp_tutorial/taxonomy
+cd /scratch/alpine/c832787271@colostate.edu/cow/taxonomy
 
 # Insert the two commands to activate qiime2
 module purge  
@@ -39,21 +39,20 @@ cd /scratch/alpine/$USER/cow/taxonomy
 wget --no-check-certificate https://ftp.microbio.me/greengenes_release/2024.09/2024.09.backbone.v4.nb.qza
 ```
 
-4. Classify taxonomy using GreenGenes2 classify the ASVs (takes about 5 mins). ~={red}(1point)=~
+4. Classify taxonomy using GreenGenes2 classify the ASVs (takes about 5 mins). 
 ```
 qiime feature-classifier classify-sklearn \--i-reads ../dada2/cow_seqs_dada2_filtered300.qza \--i-classifier 2024.09.backbone.v4.nb.qza \--o-classification taxonomy_gg2_filtered.qza
 ```
 
-5. Visualize the taxonomy of your ASVs: (~={red}1point)=~
+5. Visualize the taxonomy of your ASVs:
 ```
 qiime metadata tabulate \--m-input-file taxonomy_gg2_filtered.qza \--o-visualization taxonomy_gg2_filtered.qzv
 ```
 
 ** i am here
-6. Filter mitochondria and chloroplast out to generate a filtered feature table, keep only ASVs with a class or lower taxonomy. fill in the blank (--p-exclude) to exclude these DNA. Fill in the blank to include only class level or below classifications. ~={red}(1point)=~
-
+6. Filter mitochondria and chloroplast out to generate a filtered feature table, keep only ASVs with a class or lower taxonomy. fill in the blank (--p-exclude) to exclude these DNA. Fill in the blank to include only class level or below classifications. 
 ```
-qiime taxa filter-table \--i-table ../dada2/<YourDenoisedTable.qza> \--i-taxonomy taxonomy_gg2.qza \--p-exclude WHAT TO EXCLUDE HERE \--p-include WHAT TO INCLUDE HERE \--o-filtered-table ../dada2/table_nomitochloro_gg2_filtered300.qza
+qiime taxa filter-table \--i-table ../dada2/<YourDenoisedTable.qza> \--i-taxonomy taxonomy_gg2.qza \--p-exclude WHAT TO EXCLUDE HERE \--p-include c__ \--o-filtered-table ../dada2/table_nomitochloro_gg2_filtered300.qza
 ```
 
   
