@@ -116,7 +116,7 @@ Added the png because axis were more visible in this version.
 
 Create a job script to run the phylogenetic tree building. Remember you must start a new terminal session, navigate to your slurm directory, and then submit the job. You do NOT need to start any other interactive sessions.This job will take about an hour.
 
-Go to OnDemand and create a new text file for your job script
+8. Go to OnDemand and create a new text file for your job script
 
 ```
 
@@ -127,7 +127,6 @@ nano tree.sh
 ```
 
 #!/bin/bash
-
 #SBATCH --job-name=tree
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
@@ -143,19 +142,20 @@ nano tree.sh
 module purge  
 module load qiime2/2024.10_amplicon 
   
+#set working directory
+cd /scratch/alpine/c832787271@colostate.edu/cow
 
 #Get reference
-
 wget --no-check-certificate -P ../tree https://ftp.microbio.me/greengenes_release/2022.10/2022.10.backbone.sepp-reference.qza
 
   
 #Command
 
-qiime fragment-insertion sepp \--i-representative-sequences ../dada2/cow_table_dada2_filtered300.qza \--i-reference-database ../tree/2022.10.backbone.sepp-reference.qza \--o-tree ../tree/tree_gg2.qza \--o-placements ../tree/tree_placements_gg2.qza
+qiime fragment-insertion sepp \--i-representative-sequences ../dada2/cow_seqs_dada2_filtered300.qza \--i-reference-database ../tree/2022.10.backbone.sepp-reference.qza \--o-tree ../tree/tree_gg2.qza \--o-placements ../tree/tree_placements_gg2.qza
 
 ```
 
-- submit the job from the terminal
+9. Submit the job from the terminal
 ```
 #submit the job
 
@@ -167,11 +167,7 @@ We will use this file in the next homework!
 
   
 
-### Once this job finishes, copy and paste what the slurm email says here ~={red}(1 point)=~:
-
-  
-
-#### for example:
+10. **Once this job finishes, copy and paste what the slurm email says here:**
 
 Job ID: 24289371  
 
