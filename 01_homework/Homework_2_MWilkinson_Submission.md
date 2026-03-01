@@ -120,32 +120,22 @@ Go to OnDemand and create a new text file for your job script
 
 ```
 
-nano <YourJobName.sh>
+nano tree.sh
 
 ```
-
-  
 
 ```
 
 #!/bin/bash
 
 #SBATCH --job-name=tree
-
 #SBATCH --nodes=1
-
 #SBATCH --ntasks=8
-
 #SBATCH --partition=amilan
-
 #SBATCH --time=04:00:00
-
 #SBATCH --mail-type=ALL
-
 #SBATCH --mail-user=melanie.wilkinson@colostate.edu
-
 #SBATCH --output=slurm-%j.out
-
 #SBATCH --qos=normal
 
 
@@ -161,22 +151,16 @@ wget --no-check-certificate -P ../tree https://ftp.microbio.me/greengenes_releas
   
 #Command
 
-qiime fragment-insertion sepp \--i-representative-sequences ../dada2/Your_FILTERED_RepresentativeSequencesFile.qza \--i-reference-database ../tree/2022.10.backbone.sepp-reference.qza \--o-tree ../tree/tree_gg2.qza \--o-placements ../tree/tree_placements_gg2.qza
+qiime fragment-insertion sepp \--i-representative-sequences ../dada2/cow_table_dada2_filtered300.qza \--i-reference-database ../tree/2022.10.backbone.sepp-reference.qza \--o-tree ../tree/tree_gg2.qza \--o-placements ../tree/tree_placements_gg2.qza
 
 ```
-
-  
 
 - submit the job from the terminal
-
 ```
-
 #submit the job
 
-dos2unix YourJobName.sh
-
-sbatch YourJobName.sh
-
+dos2unix tree.sh
+sbatch tree.sh
 ```
 
 We will use this file in the next homework!
