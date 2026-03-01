@@ -122,8 +122,6 @@ qiime taxa filter-table \--i-table ../dada2/<YourDenoisedTable.qza> \--i-taxonom
 
 ```
 
-  
-
 - Visualize the taxa bar plot
 
 ```

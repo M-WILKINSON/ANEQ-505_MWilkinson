@@ -3,7 +3,7 @@
   
 0. Load interactive session
 ```
-sinteractive --reservation=aneq505 --time=02:00:00 --partition=amilan --nodes=1 --ntasks=6 --qos=normal
+ainteractive --ntasks=6 --time=02:00:00
 ```
 
 1. Load qiime2 in a terminal session after you go into the taxonomy folder
@@ -49,10 +49,9 @@ qiime feature-classifier classify-sklearn \--i-reads ../dada2/cow_seqs_dada2_fil
 qiime metadata tabulate \--m-input-file taxonomy_gg2_filtered.qza \--o-visualization taxonomy_gg2_filtered.qzv
 ```
 
-** i am here
 6. Filter mitochondria and chloroplast out to generate a filtered feature table, keep only ASVs with a class or lower taxonomy. fill in the blank (--p-exclude) to exclude these DNA. Fill in the blank to include only class level or below classifications. 
 ```
-qiime taxa filter-table \--i-table ../dada2/<YourDenoisedTable.qza> \--i-taxonomy taxonomy_gg2.qza \--p-exclude WHAT TO EXCLUDE HERE \--p-include c__ \--o-filtered-table ../dada2/table_nomitochloro_gg2_filtered300.qza
+qiime taxa filter-table \--i-table ../dada2/taxonomy_gg2_filtered.qza> \--i-taxonomy taxonomy_gg2.qza \--p-exclude exclude mitochondria,chloroplast \--p-include c__ \--o-filtered-table ../dada2/table_nomitochloro_gg2_filtered300.qza
 ```
 
   
