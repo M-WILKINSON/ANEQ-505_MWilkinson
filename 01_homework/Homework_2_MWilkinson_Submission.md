@@ -62,12 +62,15 @@ qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \-
 
 
 
-Filtered Taxa Bar Plot Questions
+**Filtered Taxa Bar Plot Questions:**
 
 
 **Question 1**: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level. What general trends do you notice?
+![[homework-2-cow-level-7-taxaplot-bars.svg]]
+Added the png because axis were more visible in this version. 
+![[Pasted image 20260301075736.png]]
 
-  
+
 
 **_Question 2**: What are the top 2 most abundant bacterial **classes** in the fecal samples?
 
@@ -109,11 +112,9 @@ Filtered Taxa Bar Plot Questions
 
   
 
-## Phylogenetic tree ~={red}(1 point)=~
+**Phylogenetic tree**
 
 Create a job script to run the phylogenetic tree building. Remember you must start a new terminal session, navigate to your slurm directory, and then submit the job. You do NOT need to start any other interactive sessions.This job will take about an hour.
-
-  
 
 Go to OnDemand and create a new text file for your job script
 
