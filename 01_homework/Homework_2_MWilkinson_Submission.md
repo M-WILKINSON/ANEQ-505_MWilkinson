@@ -71,10 +71,12 @@ Added the png because axis were more easily visible in this version.
 ![[Pasted image 20260301075736.png]]
 
 *What general trends do you notice?*
+The taxa bar plot shows a lot of variation in microbial composition across sample locations. Some samples are dominated by just a few taxa, while others, especially fecal samples, are more evenly distributed and diverse. The skin and udder samples look very similar to each other, and the same pattern is seen for oral and nasal samples. Overall, the composition differs by sample, but some taxa are shared across groups.
 
 
 ***Question 2*: What are the top 2 most abundant bacterial classes in the fecal samples?*
 
+The most two relatively abundant bacteria classes among the fecal samples were c__Clostridia_258483 and c__Bacteroidia. 
   
 
 **_Question 3**: What highly abundant ASV is shared between both the udder and skin samples?
