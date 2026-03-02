@@ -62,7 +62,7 @@ qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \-
 
 **Filtered Taxa Bar Plot Questions:**
 
-***Question 1: Attach a picture of your taxa bar plot, organized by cow sampling location ***(body_site) at the level 7 taxonomic level.* 
+***Question 1: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level.*** 
 ![[homework-2-cow-level-7-taxaplot-bars.svg]]
 Added the png because axis were more easily visible in this version. 
 ![[Pasted image 20260301075736.png]]
@@ -115,20 +115,22 @@ This parameter helps us filter out mitochondria and chloroplasts from our sample
 
 This parameter helps us filter to only the well classified ASVs as a data cleaning/quality control step, helping to improve our signal to noise ratio in our data. 
 
-***Question 8: Do the positive controls look the same as each other? Yes or No?
-Yes (similar, but not identical)***
+***Question 8: Do the positive controls look the same as each other? Yes or No?***
+
+Yes (similar, but not identical)
   
 
-**Question 9**: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no?
+***Question 9: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no?***
+
 Yes (PC1.3 and PC1.4 share some high-level trends with EC1.4, EC2.3, but the others look different)
   
 
-**Question 10**: Do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?
+***Question 10: Do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?***
 
 No. They aren't nearly as diverse as our actual samples and their most relatively abundant or dominating taxa are completely different from what we are seeing in the cow samples. 
   
 
-**Phylogenetic tree**
+***Phylogenetic tree***
 
 Create a job script to run the phylogenetic tree building. Remember you must start a new terminal session, navigate to your slurm directory, and then submit the job. You do NOT need to start any other interactive sessions.This job will take about an hour.
 
@@ -177,7 +179,7 @@ sbatch tree.sh
 
 *We will use this file in the next homework!
 
-10. **Once this job finishes, copy and paste what the slurm email says here:**
+10. Once this job finishes, copy and paste what the slurm email says here:
 
 Job ID: 24403847  
 Cluster: alpine  
