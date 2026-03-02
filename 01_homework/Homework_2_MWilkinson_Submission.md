@@ -68,6 +68,7 @@ Added the png because axis were more easily visible in this version.
 ![[Pasted image 20260301075736.png]]
 
 *What general trends do you notice?*
+
 The taxa bar plot shows a lot of variation in microbial composition across sample locations. Some samples are dominated by just a few taxa, while others, especially fecal samples, are more evenly distributed and diverse. The skin and udder samples look very similar to each other, and the same pattern is seen for oral and nasal samples. Overall, the composition differs by sample, but some taxa are shared across the groups.
 
 
@@ -83,6 +84,7 @@ The most highly relative abundant ASV shared between the udder and skin samples 
 
 **_Question 4**: Which samples (still sorted by body_site) have higher alpha diversity in terms of observed features?
 
+The fecal, skin, and udder body site samples appeared to have the highest alpha diversity, or the samples with the highest number of unique features found in them. 
   
 
 **Question 5**: Do all samples contain archaea as well?
@@ -114,15 +116,16 @@ This parameter helps us filter out mitochondria and chloroplasts from our sample
 This parameter helps us filter to only the well classified ASVs as a data cleaning/quality control step, helping to improve our signal to noise ratio in our data. 
 
 **Question 8**: Do the positive controls look the same as each other? Yes or No?
-
+Yes (similar, but not identical)
   
 
 **Question 9**: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no?
-
+Yes (PC1.3 and PC1.4 share some high-level trends with EC1.4, EC2.3, but)
   
 
 **Question 10**: Do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?
 
+No. They aren't nearly as diverse as our actual samples and their most relatively abundant or dominating taxa are completely different from what we are seeing in the cow samples. 
   
 
 **Phylogenetic tree**
