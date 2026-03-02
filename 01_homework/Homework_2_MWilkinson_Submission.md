@@ -79,6 +79,7 @@ The most two relatively abundant bacteria classes among the fecal samples were c
 
 **_Question 3**: What highly abundant ASV is shared between both the udder and skin samples?
 
+The most highly relative abundant ASV shared between the udder and skin samples was: "d__Bacteria;p__Bacillota_A_368345;c__Clostridia_258483;o__Oscillospirales;f__Oscillospiraceae_88309;g__Faecousia;s__Faecousia sp000434635" with a frequency of 43,310. This frequency was calculated by pulling the CSV from the taxa barplot into Python, filtered to the sample locations we were interested in, (udder & skin), using panda's groupby and sum functions. Alternatively, this frequency could be obtained from creating a simple pivot table in excel or google sheets however since bioinformatics data tend to be larger, I opted for the coding route. 
   
 
 **_Question 4**: Which samples (still sorted by body_site) have higher alpha diversity in terms of observed features?
@@ -86,7 +87,15 @@ The most two relatively abundant bacteria classes among the fecal samples were c
   
 
 **Question 5**: Do all samples contain archaea as well?
+No, not all *samples* contained archaea, however, each sample site showed the following frequencies for detected archaea across the total samples for that body site:
 
+| control | 0 |
+| fecal | 2,151 |
+| nasal | 111 |
+| oral | 139 |
+| skin | 1,910 |
+| udder | 887 |
+| (blank) | 0 |
   
 
 **Question 6**: Why do we filter out sp004296775?
