@@ -62,7 +62,6 @@ qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \-
 
 **Filtered Taxa Bar Plot Questions:**
 
-
 ***Question 1**: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level.* 
 ![[homework-2-cow-level-7-taxaplot-bars.svg]]
 Added the png because axis were more easily visible in this version. 
@@ -87,6 +86,7 @@ The most highly relative abundant ASV shared between the udder and skin samples 
   
 
 **Question 5**: Do all samples contain archaea as well?
+
 No, not all *samples* contained archaea, however, each sample site showed the following frequencies for detected archaea across the total samples for that body site:
 
 | control | 0 |
@@ -99,17 +99,19 @@ No, not all *samples* contained archaea, however, each sample site showed the fo
   
 
 **Question 6**: Why do we filter out sp004296775?
-We filtered out because it's a chloroplast in disguise, (has different nomenclature but has been recognized as a chloroplast contaminant by the scientific community). In lab we learned that the reason these show up in our data is due to the endosymbiotic theory, that mitochondria & chloroplasts, likely originating as bacteria, became symbionts in cytoplasm of eukaryotic cells.
+
+We filtered out because it's a chloroplast in disguise, (has different nomenclature but it has been recognized as a chloroplast contaminant by the scientific community). In lab we learned that: the reason these show up in our data is due to the endosymbiotic theory, that mitochondria & chloroplasts, likely originating as bacteria, became symbionts in cytoplasm of eukaryotic cells.
   
 
 **Question 7**: What is the difference between these two flags?
 
 *--p-exclude mitochondria,chloroplast,sp004296775 \*
+
 This parameter helps us filter out mitochondria and chloroplasts from our samples which are classified as contaminants. 
 
 *--p-include c__ \*
 
-  
+This parameter helps us filter to only the well classified ASVs as a data cleaning/quality control step, helping to improve our signal to noise ratio in our data. 
 
 **Question 8**: Do the positive controls look the same as each other? Yes or No?
 
@@ -171,8 +173,6 @@ sbatch tree.sh
 ```
 
 *We will use this file in the next homework!
-
-  
 
 10. **Once this job finishes, copy and paste what the slurm email says here:**
 
