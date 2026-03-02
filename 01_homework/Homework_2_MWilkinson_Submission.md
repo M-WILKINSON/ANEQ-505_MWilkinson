@@ -65,14 +65,15 @@ qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \-
 **Filtered Taxa Bar Plot Questions:**
 
 
-**Question 1**: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level. What general trends do you notice?
+***Question 1**: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level.* 
 ![[homework-2-cow-level-7-taxaplot-bars.svg]]
-Added the png because axis were more visible in this version. 
+Added the png because axis were more easily visible in this version. 
 ![[Pasted image 20260301075736.png]]
 
+*What general trends do you notice?*
 
 
-**_Question 2**: What are the top 2 most abundant bacterial **classes** in the fecal samples?
+***Question 2*: What are the top 2 most abundant bacterial classes in the fecal samples?*
 
   
 
@@ -117,15 +118,11 @@ Added the png because axis were more visible in this version.
 Create a job script to run the phylogenetic tree building. Remember you must start a new terminal session, navigate to your slurm directory, and then submit the job. You do NOT need to start any other interactive sessions.This job will take about an hour.
 
 8. Go to OnDemand and create a new text file for your job script
-
 ```
-
 nano tree.sh
-
 ```
 
 ```
-
 #!/bin/bash
 #SBATCH --job-name=tree
 #SBATCH --nodes=1
@@ -151,7 +148,7 @@ wget --no-check-certificate -P ../tree https://ftp.microbio.me/greengenes_releas
   
 #Command
 
-qiime fragment-insertion sepp \--i-representative-sequences ../dada2/cow_seqs_dada2_filtered300.qza \--i-reference-database ../tree/2022.10.backbone.sepp-reference.qza \--o-tree ../tree/tree_gg2.qza \--o-placements ../tree/tree_placements_gg2.qza
+qiime fragment-insertion sepp \--i-representative-sequences dada2/cow_seqs_dada2_filtered300.qza \--i-reference-database tree/2022.10.backbone.sepp-reference.qza \--o-tree tree/tree_gg2.qza \--o-placements tree/tree_placements_gg2.qza
 
 ```
 
@@ -163,7 +160,7 @@ dos2unix tree.sh
 sbatch tree.sh
 ```
 
-We will use this file in the next homework!
+*We will use this file in the next homework!
 
   
 
