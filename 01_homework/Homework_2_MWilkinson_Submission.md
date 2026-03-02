@@ -120,7 +120,7 @@ Yes (similar, but not identical)
   
 
 **Question 9**: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no?
-Yes (PC1.3 and PC1.4 share some high-level trends with EC1.4, EC2.3, but)
+Yes (PC1.3 and PC1.4 share some high-level trends with EC1.4, EC2.3, but the others look different)
   
 
 **Question 10**: Do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?
