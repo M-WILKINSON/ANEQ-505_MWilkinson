@@ -1,4 +1,4 @@
-**Cow Site Data Workflow**, part 2
+**Cow Site Data Workflow**, Part II. 
 
   
 0. Load interactive session
@@ -54,12 +54,10 @@ qiime metadata tabulate \--m-input-file taxonomy_gg2_filtered.qza \--o-visualiza
 qiime taxa filter-table \--i-table ../dada2/cow_table_dada2_filtered300.qza \--i-taxonomy taxonomy_gg2_filtered.qza \--p-exclude mitochondria,chloroplast,sp004296775 \--p-include c__ \--o-filtered-table ../dada2/table_nomitochloro_gg2_filtered300.qza
 ```
 
-  
 7. Visualize the taxa bar plot
 ```
 qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \--i-taxonomy taxonomy_gg2_filtered.qza \--m-metadata-file ../metadata/cow_metadata.txt \--o-visualization ../taxaplots/taxa_barplot_nomitochloro_gg2_filtered300.qzv
 ```
-
 
 
 **Filtered Taxa Bar Plot Questions:**
@@ -71,7 +69,7 @@ Added the png because axis were more easily visible in this version.
 ![[Pasted image 20260301075736.png]]
 
 *What general trends do you notice?*
-The taxa bar plot shows a lot of variation in microbial composition across sample locations. Some samples are dominated by just a few taxa, while others, especially fecal samples, are more evenly distributed and diverse. The skin and udder samples look very similar to each other, and the same pattern is seen for oral and nasal samples. Overall, the composition differs by sample, but some taxa are shared across groups.
+The taxa bar plot shows a lot of variation in microbial composition across sample locations. Some samples are dominated by just a few taxa, while others, especially fecal samples, are more evenly distributed and diverse. The skin and udder samples look very similar to each other, and the same pattern is seen for oral and nasal samples. Overall, the composition differs by sample, but some taxa are shared across the groups.
 
 
 ***Question 2*: What are the top 2 most abundant bacterial classes in the fecal samples?*
@@ -87,15 +85,15 @@ The most two relatively abundant bacteria classes among the fecal samples were c
 
   
 
-**Question 5**: do all samples contain archaea as well?
+**Question 5**: Do all samples contain archaea as well?
 
   
 
-**Question 6**: why do we filter out sp004296775?
+**Question 6**: Why do we filter out sp004296775?
 
   
 
-**Question 7**: what is the difference between these two flags?
+**Question 7**: What is the difference between these two flags?
 
 --p-exclude mitochondria,chloroplast,sp004296775 \
 
@@ -103,7 +101,7 @@ The most two relatively abundant bacteria classes among the fecal samples were c
 
   
 
-**Question 8**: do the positive controls look the same as each other? Yes or No?
+**Question 8**: Do the positive controls look the same as each other? Yes or No?
 
   
 
@@ -111,7 +109,7 @@ The most two relatively abundant bacteria classes among the fecal samples were c
 
   
 
-**Question 10**: do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?
+**Question 10**: Do the negative/extraction controls (Samples labeled as EC), look like the real samples? Yes or no?
 
   
 
