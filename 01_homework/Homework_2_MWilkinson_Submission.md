@@ -62,32 +62,32 @@ qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \-
 
 **Filtered Taxa Bar Plot Questions:**
 
-***Question 1**: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level.* 
+***Question 1: Attach a picture of your taxa bar plot, organized by cow sampling location ***(body_site) at the level 7 taxonomic level.* 
 ![[homework-2-cow-level-7-taxaplot-bars.svg]]
 Added the png because axis were more easily visible in this version. 
 ![[Pasted image 20260301075736.png]]
 
-*What general trends do you notice?*
+**What general trends do you notice?**
 
 The taxa bar plot shows a lot of variation in microbial composition across sample locations. Some samples are dominated by just a few taxa, while others, especially fecal samples, are more evenly distributed and diverse. The skin and udder samples look very similar to each other, and the same pattern is seen for oral and nasal samples. Overall, the composition differs by sample, but some taxa are shared across the groups.
 
 
-***Question 2*: What are the top 2 most abundant bacterial classes in the fecal samples?*
+***Question 2. What are the top 2 most abundant bacterial classes in the fecal samples?***
 
 The most two relatively abundant bacteria classes among the fecal samples were c__Clostridia_258483 and c__Bacteroidia. 
   
 
-**_Question 3**: What highly abundant ASV is shared between both the udder and skin samples?
+***Question 3: What highly abundant ASV is shared between both the udder and skin samples?***
 
 The most highly relative abundant ASV shared between the udder and skin samples was: "d__Bacteria;p__Bacillota_A_368345;c__Clostridia_258483;o__Oscillospirales;f__Oscillospiraceae_88309;g__Faecousia;s__Faecousia sp000434635" with a frequency of 43,310. This frequency was calculated by pulling the CSV from the taxa barplot into Python, filtered to the sample locations we were interested in, (udder & skin), using panda's groupby and sum functions. Alternatively, this frequency could be obtained from creating a simple pivot table in excel or google sheets however since bioinformatics data tend to be larger, I opted for the coding route. 
   
 
-**_Question 4**: Which samples (still sorted by body_site) have higher alpha diversity in terms of observed features?
+***Question 4: Which samples (still sorted by body_site) have higher alpha diversity in terms of observed features?***
 
 The fecal, skin, and udder body site samples appeared to have the highest alpha diversity, or the samples with the highest number of unique features found in them. 
   
 
-**Question 5**: Do all samples contain archaea as well?
+***Question 5: Do all samples contain archaea as well?***
 
 No, not all *samples* contained archaea, however, each sample site showed the following frequencies for detected archaea across the total samples for that body site:
 
@@ -100,12 +100,12 @@ No, not all *samples* contained archaea, however, each sample site showed the fo
 | (blank) | 0 |
   
 
-**Question 6**: Why do we filter out sp004296775?
+***Question 6: Why do we filter out sp004296775?***
 
 We filtered out because it's a chloroplast in disguise, (has different nomenclature but it has been recognized as a chloroplast contaminant by the scientific community). In lab we learned that: the reason these show up in our data is due to the endosymbiotic theory, that mitochondria & chloroplasts, likely originating as bacteria, became symbionts in cytoplasm of eukaryotic cells.
   
 
-**Question 7**: What is the difference between these two flags?
+***Question 7: What is the difference between these two flags?***
 
 *--p-exclude mitochondria,chloroplast,sp004296775 \*
 
@@ -115,8 +115,8 @@ This parameter helps us filter out mitochondria and chloroplasts from our sample
 
 This parameter helps us filter to only the well classified ASVs as a data cleaning/quality control step, helping to improve our signal to noise ratio in our data. 
 
-**Question 8**: Do the positive controls look the same as each other? Yes or No?
-Yes (similar, but not identical)
+***Question 8: Do the positive controls look the same as each other? Yes or No?
+Yes (similar, but not identical)***
   
 
 **Question 9**: Do the negative/extraction controls (Samples labeled as EC), look like the positive controls? Yes or no?
