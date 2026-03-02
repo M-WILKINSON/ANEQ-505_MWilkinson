@@ -99,14 +99,15 @@ No, not all *samples* contained archaea, however, each sample site showed the fo
   
 
 **Question 6**: Why do we filter out sp004296775?
-
+We filtered out because it's a chloroplast in disguise, (has different nomenclature but has been recognized as a chloroplast contaminant by the scientific community). In lab we learned that the reason these show up in our data is due to the endosymbiotic theory, that mitochondria & chloroplasts, likely originating as bacteria, became symbionts in cytoplasm of eukaryotic cells.
   
 
 **Question 7**: What is the difference between these two flags?
 
---p-exclude mitochondria,chloroplast,sp004296775 \
+*--p-exclude mitochondria,chloroplast,sp004296775 \*
+This parameter helps us filter out mitochondria and chloroplasts from our samples which are classified as contaminants. 
 
---p-include c__ \
+*--p-include c__ \*
 
   
 
