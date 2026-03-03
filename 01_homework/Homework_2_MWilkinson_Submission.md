@@ -65,7 +65,7 @@ qiime taxa barplot \--i-table ../dada2/table_nomitochloro_gg2_filtered300.qza \-
 ***Question 1: Attach a picture of your taxa bar plot, organized by cow sampling location (body_site) at the level 7 taxonomic level.*** 
 ![[homework-2-cow-level-7-taxaplot-bars.svg]]
 Added the png because axis were more easily visible in this version. 
-![[Pasted image 20260301075736.png]]
+![[level 7 taxa barplot pasted image.png]]
 
 **What general trends do you notice?**
 
