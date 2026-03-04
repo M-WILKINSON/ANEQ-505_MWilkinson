@@ -145,7 +145,7 @@ nano tree.sh
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
 #SBATCH --partition=amilan
-#SBATCH --time=04:00:00
+#SBATCH --time=20:00:00 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=melanie.wilkinson@colostate.edu
 #SBATCH --output=slurm-%j.out
