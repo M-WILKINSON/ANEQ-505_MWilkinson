@@ -10,3 +10,4 @@ In the context of the paper’s results, this figure shows that maternal transmi
 These findings may guide future researchers in refining questionnaires to identify at-risk workers and inform targeted interventions to enhance occupational health.
 
 2. de La Serre 2024; https://www.tandfonline.com/doi/epdf/10.1080/19490976.2024.2421581?needAccess=true, Assignment: Ask 1 question (what did you feel like this paper didn’t cover or discuss? Or did you have a question about a method they chose, or a result they presented?)
+	Question: 
