@@ -1,6 +1,11 @@
 
 **Cow Site Data Workflow**,  Part 3
 
+ Load interactive session
+```
+ainteractive --ntasks=6 --time=02:00:00
+```
+
 Load qiime2 in a terminal session after you go into the **cow** folder
 ```
 # Insert the two commands to activate qiime2
@@ -17,7 +22,7 @@ Choose the input sequencings depths (min and max) for generating the alpha raref
 #go to the cow directory
 cd /scratch/alpine/c832787271@colostate.edu/cow
 
-qiime diversity alpha-rarefaction \--i-table dada2/cow_table_dada2_filtered300.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization alpha_rarefaction_curves_16S.qzv \--p-min-depth ADD MIN RAREFACTION DEPTH \--p-max-depth ADD MAX RAREFACTION DEPTH
+qiime diversity alpha-rarefaction \--i-table dada2/cow_table_dada2_filtered300.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization alpha_rarefaction_curves_16S.qzv \--p-min-depth 1000 \--p-max-depth 10000
 
 ```
 
