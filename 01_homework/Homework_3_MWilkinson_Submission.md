@@ -30,7 +30,7 @@ qiime diversity alpha-rarefaction \--i-table dada2/cow_table_dada2_filtered300.q
 
 ```
 
-qiime diversity core-metrics-phylogenetic \--i-table INSERT FILTERED TABLE HERE \--i-phylogeny INSERT FILE HERE \--m-metadata-file INSERT FILE HERE \--p-sampling-depth INSERT SEQ DEPTH HERE \--output-dir core_metrics_results
+qiime diversity core-metrics-phylogenetic \--i-table cow_table_dada2_filtered300.qza \--i-phylogeny tree_gg2.qza \--m-metadata-file metadata/cow_metadata.txt \--p-sampling-depth 1500 \--output-dir core_metrics_results
 
 ```
 
@@ -60,12 +60,16 @@ The table.qzv file is the one used to visualize the sequencing depth across all 
 
 2. What did you choose for the rarefaction depth (the input for core metrics -p-sampling-depth flag)? why?
 
-I pulled the table.qzv file into QIIME2 view and started with taking a look at the overview tab, specifically observing the min (3), mean (11,191), and max (33,768) frequencies per sample to better understand the range. 
+I pulled the table.qzv file into QIIME2 view and started with taking a look at the overview tab, specifically observing the min (3), median (9,027), and max (33,768) frequencies per sample to better understand the range. 
+
+A minimum depth of 1,000 was selected to exclude extremely low-depth samples, while a maximum depth of 10,000 was chosen because it is near the median sequencing depth and retains the majority of samples before substantial sample loss occurs.
 
 
 3. Which cow body location had more observed features? Which has the lowest?
 
-4. What is the main difference between Faiths PD and Shannons alpha diversity metrics?  
+While referencing [alpha_rarefaction_curves_16S.qzv] in QIIME2 view, it appears that the fecal samples had the highest number of observed features and the nasal samples had the least. 
+
+4. What is the main difference between Faiths PD and Shannon's alpha diversity metrics?  
 
 5. Which diversity metrics produced by the core-metrics pipeline require phylogenetic information?
 
