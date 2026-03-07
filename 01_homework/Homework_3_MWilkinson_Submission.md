@@ -5,8 +5,8 @@ Load qiime2 in a terminal session after you go into the **cow** folder
 ```
 # Insert the two commands to activate qiime2
 
-  
-  
+module purge  
+module load qiime2/2024.10_amplicon  
 ```
 
 ### Alpha Rarefaction Plot 
@@ -15,8 +15,7 @@ Load qiime2 in a terminal session after you go into the **cow** folder
 ```
 
 #go to the cow directory
-
-  
+cd /scratch/alpine/c832787271@colostate.edu/cow
 
 qiime diversity alpha-rarefaction \--i-table dada2/cow_table_dada2_filtered300.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization alpha_rarefaction_curves_16S.qzv \--p-min-depth ADD MIN RAREFACTION DEPTH \--p-max-depth ADD MAX RAREFACTION DEPTH
 
