@@ -20,6 +20,7 @@ Choose the input sequencings depths (min and max) for generating the alpha raref
 ```
 
 #go to the cow directory
+
 cd /scratch/alpine/c832787271@colostate.edu/cow
 
 qiime diversity alpha-rarefaction \--i-table dada2/cow_table_dada2_filtered300.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization alpha_rarefaction_curves_16S.qzv \--p-min-depth 1000 \--p-max-depth 10000
@@ -70,13 +71,18 @@ While referencing [alpha_rarefaction_curves_16S.qzv] in QIIME2 view, it appears 
 
 4. What is the main difference between Faiths PD and Shannon's alpha diversity metrics?  
 
+Faith’s PD uses evolutionary relationships between organisms, while Shannon only uses abundance and richness.
+
 5. Which diversity metrics produced by the core-metrics pipeline require phylogenetic information?
+
+For alpha diversity, Faith's PD requires tree information and for beta diversity the weighted and unweighted unifrac also requires tree information. 
 
 6. Which two body sites have the highest Faiths PD alpha diversity?  Are the groups significantly different?
 
 7. Does it seem like there are any groupings in the beta diversity? What are the groupings?
 
 8. Why do you think these samples are grouping together?
+Different environments naturally select for different microbial communities. Could be based off of environmental conditions and required functions. 
 
 9. What test can you run to determine if the groups are significantly different?
 
@@ -85,8 +91,11 @@ While referencing [alpha_rarefaction_curves_16S.qzv] in QIIME2 view, it appears 
 
 #insert command for running the test you suggest from question 7
 
-  
-  
-  
+qiime diversity beta-group-significance \  
+--i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza \  
+--m-metadata-file metadata/sample-metadata.tsv \  
+--m-metadata-column body-site \  
+--p-method permanova \  
+--o-visualization unweighted-unifrac-body-site-significance.qzv
 
 ```
