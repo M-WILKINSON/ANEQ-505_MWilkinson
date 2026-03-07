@@ -55,6 +55,9 @@ The table.qzv file is the one used to visualize the sequencing depth across all 
 
 2. What did you choose for the rarefaction depth (the input for core metrics -p-sampling-depth flag)? why?
 
+I pulled the table.qzv file into QIIME2 view and started with taking a look at the overview tab, specifically observing the min (3), mean (11,191), and max (33,768) frequencies per sample to better understand the range. 
+
+
 3. Which cow body location had more observed features? Which has the lowest?
 
 4. What is the main difference between Faiths PD and Shannons alpha diversity metrics?  
