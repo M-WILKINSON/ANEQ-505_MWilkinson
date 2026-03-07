@@ -79,12 +79,17 @@ For alpha diversity, Faith's PD requires tree information and for beta diversity
 
 6. Which two body sites have the highest Faiths PD alpha diversity?  Are the groups significantly different?
 
+The fecal, skin, and udder samples have higher phylogenetic diversity than the controls, nasal, or oral samples.
+
 7. Does it seem like there are any groupings in the beta diversity? What are the groupings?
 
 8. Why do you think these samples are grouping together?
-Different environments naturally select for different microbial communities. Could be based off of environmental conditions and required functions. 
+
+Different environments naturally select for different microbial communities. Could be based off of environmental conditions and required functions of microbes. 
 
 9. What test can you run to determine if the groups are significantly different?
+
+A PERMANOVA test.
 
 10. What command would you use to run that test?
 ```
