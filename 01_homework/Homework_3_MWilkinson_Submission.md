@@ -11,7 +11,7 @@ module load qiime2/2024.10_amplicon
 
 ### Alpha Rarefaction Plot 
 
-- Choose the input sequencings depths (min and max) for generating the alpha rarefaction plot:
+Choose the input sequencings depths (min and max) for generating the alpha rarefaction plot:
 ```
 
 #go to the cow directory
@@ -31,14 +31,14 @@ qiime diversity core-metrics-phylogenetic \--i-table INSERT FILTERED TABLE HERE 
 
 ### Visualize alpha diversity plots
 
-- generate a plot to visualize the observed features ~={red}(1 point)=~
+Generate a plot to visualize the observed features ~={red}(1 point)=~
 ```
 
 qiime diversity alpha-group-significance \--i-alpha-diversity core_metrics_results/FILENAME.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization core_metrics_results/OUTPUT-FILENAME.qzv
 
 ```
 
-- generate a plot to visualize faith's PD ~={red}(2 points)=~
+Generate a plot to visualize faith's PD 
 ```
 
 ## insert the entire code chunk for generating this visualization
