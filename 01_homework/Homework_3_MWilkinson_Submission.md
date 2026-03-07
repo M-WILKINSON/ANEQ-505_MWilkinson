@@ -31,7 +31,7 @@ qiime diversity core-metrics-phylogenetic \--i-table INSERT FILTERED TABLE HERE 
 
 ### Visualize alpha diversity plots
 
-Generate a plot to visualize the observed features ~={red}(1 point)=~
+Generate a plot to visualize the observed features
 ```
 
 qiime diversity alpha-group-significance \--i-alpha-diversity core_metrics_results/FILENAME.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization core_metrics_results/OUTPUT-FILENAME.qzv
@@ -49,9 +49,11 @@ Generate a plot to visualize faith's PD
 ```
 
 ## Homework questions:
-1. what is the name of the file you needed to use to figure out what min and max depths to use to generate the alpha rarefaction plot? (Hint: which file contains the sequencing depths for each sample)
+1. What is the name of the file you needed to use to figure out what min and max depths to use to generate the alpha rarefaction plot? (Hint: which file contains the sequencing depths for each sample)
 
-2. what did you choose for the rarefaction depth (the input for core metrics -p-sampling-depth flag)? why?
+The table.qzv file is the one used to visualize the sequencing depth across all of our samples. In the cow dataset, this was the [cow_table_dada2_filtered300.qzv] file. 
+
+2. What did you choose for the rarefaction depth (the input for core metrics -p-sampling-depth flag)? why?
 
 3. Which cow body location had more observed features? Which has the lowest?
 
@@ -68,7 +70,6 @@ Generate a plot to visualize faith's PD
 9. What test can you run to determine if the groups are significantly different?
 
 10. What command would you use to run that test?
-
 ```
 
 #insert command for running the test you suggest from question 7
