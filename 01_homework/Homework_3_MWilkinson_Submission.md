@@ -30,7 +30,7 @@ qiime diversity alpha-rarefaction \--i-table dada2/cow_table_dada2_filtered300.q
 
 ```
 
-qiime diversity core-metrics-phylogenetic \--i-table cow_table_dada2_filtered300.qza \--i-phylogeny tree_gg2.qza \--m-metadata-file metadata/cow_metadata.txt \--p-sampling-depth 1500 \--output-dir core_metrics_results
+qiime diversity core-metrics-phylogenetic \--i-table dada2/cow_table_dada2_filtered300.qza \--i-phylogeny tree/tree_gg2.qza \--m-metadata-file metadata/cow_metadata.txt \--p-sampling-depth 1500 \--output-dir core_metrics_results
 
 ```
 
@@ -39,7 +39,7 @@ qiime diversity core-metrics-phylogenetic \--i-table cow_table_dada2_filtered300
 Generate a plot to visualize the observed features
 ```
 
-qiime diversity alpha-group-significance \--i-alpha-diversity core_metrics_results/FILENAME.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization core_metrics_results/OUTPUT-FILENAME.qzv
+qiime diversity alpha-group-significance \--i-alpha-diversity core_metrics_results/observed_features_vector.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization core_metrics_results/observed_features_statistics.qzv
 
 ```
 
@@ -48,9 +48,8 @@ Generate a plot to visualize faith's PD
 
 ## insert the entire code chunk for generating this visualization
 
+qiime diversity alpha-group-significance \--i-alpha-diversity core_metrics_results/faith_pd_vector.qza \--m-metadata-file metadata/cow_metadata.txt \--o-visualization core_metrics_results/faiths_pd_statistics.qzv  
   
-  
-
 ```
 
 ## Homework questions:
@@ -60,7 +59,7 @@ The table.qzv file is the one used to visualize the sequencing depth across all 
 
 2. What did you choose for the rarefaction depth (the input for core metrics -p-sampling-depth flag)? why?
 
-I pulled the table.qzv file into QIIME2 view and started with taking a look at the overview tab, specifically observing the min (3), median (9,027), and max (33,768) frequencies per sample to better understand the range. 
+I pulled the table.qzv file into QIIME2 view and started with taking a look at the overview tab, specifically observing the min (3), median (9,027), and max (33,768) frequencies per sample to better understand the range. Then I looked at the interactive sample detail and feature detail tabs to understand in greater detail my feature representation across samples.  
 
 A minimum depth of 1,000 was selected to exclude extremely low-depth samples, while a maximum depth of 10,000 was chosen because it is near the median sequencing depth and retains the majority of samples before substantial sample loss occurs.
 
