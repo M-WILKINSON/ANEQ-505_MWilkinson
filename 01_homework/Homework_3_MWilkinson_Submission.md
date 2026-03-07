@@ -83,11 +83,9 @@ The fecal, skin, and udder samples have higher phylogenetic diversity than the c
 
 7. Does it seem like there are any groupings in the beta diversity? What are the groupings?
 
-![[unweighted_unifrac_emperor.png]]
 While referencing the PCoA, from visualizing this file, unweighted_unifrac_emperor.qzv, we can see that the skin and udder samples are grouped more closely together. The nasal and oral are also overlapping. The fecal samples however are grouped much further away from the others and are more tightly together. 
 
-
-
+I also took a look at the bray_curtis_emperor.qzv for comparison and saw similar groupings. 
 
 
 8. Why do you think these samples are grouping together?
