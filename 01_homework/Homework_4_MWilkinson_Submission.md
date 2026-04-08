@@ -169,17 +169,20 @@ I used 5000 for `--p-min-frequency`. This should match the sampling depth (`--p-
 
 4. Why do we filter out samples with low frequency and low abundance ASVs?
 
-We filter out low-frequency samples and low-abundance ASVs in order to clean up the data. Samples with very low read counts aren’t very reliable, and really rare ASVs are more likely to be noise or sequencing errors. Removing them helps reduce noise and makes the results from analyses like ANCOM-BC2 more statistically meaningful and possible to interpret.
+We filter out low-frequency samples and low-abundance ASVs in order to clean up the data. Samples with very low read counts aren’t very reliable, and really rare ASVs are more likely to be noise or sequencing errors rather than true biological signals. Removing them helps reduce noise and makes the results from analyses possible to interpret.
 
 5. What was the most enriched genus in skin compared to fecal, and what was the
 most depleted genus in skin compared to fecal (make sure adjusted p is set to less
-than 0.05)?
+than 0.05)? 
+
+
 
 
 
 ## Extra credit~ generate a classification model to see how well we can predict cow body site
 ```
 cd /scratch/alpine/$USER/cow/
+
 mkdir ml
 cd ml
 
