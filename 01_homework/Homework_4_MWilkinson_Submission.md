@@ -37,20 +37,20 @@ in the correct working directory.**
 **Read in metadata~**
 4. Fill in the file path you used in the R Markdown to load the metadata.
 ```
-metadata <- read_tsv("YOUR FILE PATH HERE")
+metadata <- read_tsv("C:/Users/Melan/Obsidian/cow_r/03_metadata/cow_metadata.txt")
 ```
 
 **Read in alpha diversity data ~**
 6. Fill in the file path you used in the R Markdown to load the shannon data
 ```
-shannon <- read_tsv("YOUR FILE PATH HERE")
+shannon <- read_tsv("C:/Users/Melan/Obsidian/cow_r/02_data/alpha_div/shannon.tsv")
 ```
 
 **Read in beta diversity data ~={red}(1 point)=~**
 7. Fill in the file path you used in the R Markdown to load the unweighted unifrac
 data
 ```
-uw_unifrac <- read_tsv("YOUR FILE PATH HERE")
+uw_unifrac <- read_tsv("uw_unifrac <- read_tsv("C:/Users/Melan/Obsidian/cow_r/02_data/beta_div/unweighted_unifrac.txt")
 ```
 
 **Load in tabulated results ~={red}(1 point)=~**
