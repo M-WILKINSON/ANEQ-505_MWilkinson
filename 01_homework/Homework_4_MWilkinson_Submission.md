@@ -14,7 +14,9 @@ cow_r
 └── 05_figures
 
 2. Inside the ***02_data directory***, make the following directories 
-(NOTE: I updated the designated folder from code to data since these are the input data files and per mirroring last Friday's decomp tutorial: "The **`01_notes`** directory is where you can store any notes related to your project.  
+(NOTE: I updated the designated folder from code to data since these are the input data files and per mirroring last Friday's decomp tutorial: 
+
+"The **`01_notes`** directory is where you can store any notes related to your project.  
 The **`02_data`** directory should contain raw data (for example, sequencing data, or qiime2 outputs qzvs).  
 The **`03_metadata`** directory will store all metadata associated with the project.  
 The **`04_code`** directory is where your R scripts will be kept.   
@@ -106,8 +108,8 @@ table_nomitochlorocontrols_gg2_filtered300.qza \--p-min-frequency YOUR NUMBER HE
 qiime feature-table filter-features \--i-table INPUT TABLE \--p-min-frequency 50
 \--p-min-samples 20 \--o-filtered-table table_5k_abund.qza
 ```
-**Collapse features to genus level**
 
+**Collapse features to genus level**
 15. We will collapse to the genus level to make it easier to interpret the results.
 (Hint: We used 7 for species, so think about which number you would use for genus.)
 ```
@@ -178,9 +180,9 @@ random-state 123 \--p-n-jobs 1 \--output-dir sample_classifier_results_bodysite
 ### **Questions:**
 1. Why might removing controls be important before downstream analysis?
 
-2. what 2 features that are high in fecal samples?
+2. What 2 features that are high in fecal samples?
 
-3. what are 2 features that are low in nasal?
+3. What are 2 features that are low in nasal?
 
-4. what is the accuracy of your model, and if the accuracy of the classifier is
+4. What is the accuracy of your model, and if the accuracy of the classifier is
 high, what does that suggest about the microbial compositions of each site?
