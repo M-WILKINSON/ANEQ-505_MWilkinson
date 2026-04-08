@@ -215,6 +215,11 @@ Removing controls is important because they don’t represent real samples. Incl
 3. What are 2 features that are low in nasal?
 
 4. What is the accuracy of your model, and if the accuracy of the classifier is high, what does that suggest about the microbial compositions of each site?
+
+The model achieves 88% overall accuracy, far above the 35% baseline, with classification for fecal, nasal, oral, and skin samples, while udder samples show some overlap with skin. This indicates that most body sites have distinct microbial communities, though udder and skin share some similarities.
+
+
+Table:
 |fecal|nasal|oral|skin|udder|Overall Accuracy|
 |---|---|---|---|---|---|
 |fecal|1.0|0.0|0.0|0.0|0.0||
