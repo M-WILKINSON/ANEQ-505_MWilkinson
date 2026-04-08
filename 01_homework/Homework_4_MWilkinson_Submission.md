@@ -215,3 +215,13 @@ Removing controls is important because they don’t represent real samples. Incl
 3. What are 2 features that are low in nasal?
 
 4. What is the accuracy of your model, and if the accuracy of the classifier is high, what does that suggest about the microbial compositions of each site?
+|fecal|nasal|oral|skin|udder|Overall Accuracy|
+|---|---|---|---|---|---|
+|fecal|1.0|0.0|0.0|0.0|0.0||
+|nasal|0.0|1.0|0.0|0.0|0.0||
+|oral|0.0|0.0|1.0|0.0|0.0||
+|skin|0.0|0.0|0.0|1.0|0.0||
+|udder|0.0|0.0|0.0|0.666667|0.333333||
+|Overall Accuracy||||||0.882353|
+|Baseline Accuracy||||||0.352941|
+|Accuracy Ratio||||||2.5|
