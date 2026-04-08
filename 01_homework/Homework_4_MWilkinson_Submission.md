@@ -219,7 +219,7 @@ Removing controls is important because they don’t represent real samples. Incl
 The model achieves 88% overall accuracy, far above the 35% baseline, with classification for fecal, nasal, oral, and skin samples, while udder samples show some overlap with skin. This indicates that most body sites have distinct microbial communities, though udder and skin share some similarities.
 
 
-Table:
+Model Accuracy Table (accuracy_results.qzv):
 |fecal|nasal|oral|skin|udder|Overall Accuracy|
 |---|---|---|---|---|---|
 |fecal|1.0|0.0|0.0|0.0|0.0||
