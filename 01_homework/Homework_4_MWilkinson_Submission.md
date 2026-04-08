@@ -171,8 +171,7 @@ I used 5000 for `--p-min-frequency`. This should match the sampling depth (`--p-
 
 We filter out low-frequency samples and low-abundance ASVs in order to clean up the data. Samples with very low read counts aren’t very reliable, and really rare ASVs are more likely to be noise or sequencing errors rather than true biological signals. Removing them helps reduce noise and makes the results from analyses possible to interpret.
 
-5. What was the most enriched genus in skin compared to fecal, and what was the
-most depleted genus in skin compared to fecal (make sure adjusted p is set to less
+5. What was the most enriched genus in skin compared to fecal, and what was the most depleted genus in skin compared to fecal (make sure adjusted p is set to less
 than 0.05)? 
 
 
@@ -211,5 +210,4 @@ random-state 123 \--p-n-jobs 1 \--output-dir sample_classifier_results_bodysite
 
 3. What are 2 features that are low in nasal?
 
-4. What is the accuracy of your model, and if the accuracy of the classifier is
-high, what does that suggest about the microbial compositions of each site?
+4. What is the accuracy of your model, and if the accuracy of the classifier is high, what does that suggest about the microbial compositions of each site?
