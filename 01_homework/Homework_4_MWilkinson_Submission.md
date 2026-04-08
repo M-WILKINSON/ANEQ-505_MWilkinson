@@ -152,27 +152,37 @@ qiime composition ancombc2-visualizer \
 ## Homework questions: 
 1. Describe one way to get data from your qiime2 outputs into a format that can be used for R.
 
+We can download our alpha and beta diversity metrics and the tabulated_results.tsv file from Alpine OnDemand and then unzip and load (read) them into R using the read function. 
+
 2. Which body site appeared most distinct in the taxa bar plot, meaning it was not
 similar to at least one of the other body sites? Explain why that site looks
 different.
 
+The fecal samples were most different to all the other sample types. ![[Pasted image 20260408115634.png]] In addition to analyzing the taxabarplots, we can also see in the PCoA plot that they are group separately/all on their own in the upper left-hand corner rather than overlapping with other sample group types. 
+
 
 3. When generating the filtered table for ANCOM-BC2, what value did you choose for
 `--p-min-frequency`? Which core metrics parameter should this match, and why do
-these values need to be the same? (Report your core metrics value here: ___)
+these values need to be the same? (Report your core metrics value here:  5,000)
 
+I used 5000 for `--p-min-frequency`. This should match the sampling depth (`--p-sampling-depth`) from the core metrics step, which was also set to 5000. These need to match so we’re working with the same set of samples across analyses. If they’re different, you could end up including samples in one step that were excluded in another, which would make the results harder to compare and potentially less reliable.
 
 4. Why do we filter out samples with low frequency and low abundance ASVs?
+
+We filter out low-frequency samples and low-abundance ASVs in order to clean up the data. Samples with very low read counts aren’t very reliable, and really rare ASVs are more likely to be noise or sequencing errors. Removing them helps reduce noise and makes the results from analyses like ANCOM-BC2 more statistically meaningful and possible to interpret.
 
 5. What was the most enriched genus in skin compared to fecal, and what was the
 most depleted genus in skin compared to fecal (make sure adjusted p is set to less
 than 0.05)?
+
+
 
 ## Extra credit~ generate a classification model to see how well we can predict cow body site
 ```
 cd /scratch/alpine/$USER/cow/
 mkdir ml
 cd ml
+
 #remove controls
 qiime feature-table filter-samples \--i-table
 ../core_metrics_results/rarefied_table.qza \--m-metadata-file
@@ -182,6 +192,7 @@ qiime taxa collapse \--i-table rarefied_table_no_controls.qza \--i-taxonomy
 ../taxonomy/taxonomy_gg2.qza \--p-level 7 \--o-collapsed-table
 rarefied_table_no_controls_L7.qza
 ```
+
 ```
 qiime sample-classifier classify-samples \--i-table
 rarefied_table_no_controls_L7.qza \--m-metadata-file
