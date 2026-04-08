@@ -179,19 +179,24 @@ than 0.05)?
 
 ## Extra credit~ generate a classification model to see how well we can predict cow body site
 ```
-cd /scratch/alpine/$USER/cow/
+cd /scratch/alpine/c832787271@colostate.edu/cow
 
 mkdir ml
 cd ml
 
-#remove controls
-qiime feature-table filter-samples \--i-table
-../core_metrics_results/rarefied_table.qza \--m-metadata-file
-../metadata/cow_metadata.txt \--p-where "[body_site] != 'control'" \--o-filtered-
-table rarefied_table_no_controls.qza
-qiime taxa collapse \--i-table rarefied_table_no_controls.qza \--i-taxonomy
-../taxonomy/taxonomy_gg2.qza \--p-level 7 \--o-collapsed-table
-rarefied_table_no_controls_L7.qza
+# Remove controls from the feature table  
+qiime feature-table filter-samples \  
+--i-table ../core_metrics_results/rarefied_table.qza \  
+--m-metadata-file ../metadata/cow_metadata.txt \  
+--p-where "[body_site] != 'control'" \  
+--o-filtered-table rarefied_table_no_controls.qza  
+  
+# Collapse features to taxonomic level 7 (species)  
+qiime taxa collapse \  
+--i-table rarefied_table_no_controls.qza \  
+--i-taxonomy ../taxonomy/taxonomy_gg2.qza \  
+--p-level 7 \  
+--o-collapsed-table rarefied_table_no_controls_L7.qza
 ```
 
 ```
@@ -204,6 +209,8 @@ random-state 123 \--p-n-jobs 1 \--output-dir sample_classifier_results_bodysite
 
 ### **Questions:**
 1. Why might removing controls be important before downstream analysis?
+
+Removing controls is important because they don’t represent real samples. Including them could skew results or reduce the accuracy of analyses, so we remove them to focus only on true biological variation.
 
 2. What 2 features that are high in fecal samples?
 
