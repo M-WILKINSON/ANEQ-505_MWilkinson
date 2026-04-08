@@ -13,7 +13,13 @@ cow_r
 ├── 04_code
 └── 05_figures
 
-2. Inside the 02_data directory, make the following directories (NOTE: I updated the designated folder from code to data since these are the input data files and per mirroring last Friday's decomp tutorial)
+2. Inside the ***02_data directory***, make the following directories 
+(NOTE: I updated the designated folder from code to data since these are the input data files and per mirroring last Friday's decomp tutorial: "The **`01_notes`** directory is where you can store any notes related to your project.  
+The **`02_data`** directory should contain raw data (for example, sequencing data, or qiime2 outputs qzvs).  
+The **`03_metadata`** directory will store all metadata associated with the project.  
+The **`04_code`** directory is where your R scripts will be kept.   
+The **`05_figures`** directory will store figures generated from your R analyses.)"
+
 02_data
 ├── alpha_div
 ├── beta_div
@@ -30,9 +36,6 @@ Now that we have set up the correct file structure and put our files in the
 correct directories, we can start our cow R analysis.
 
 4. Open the cow_HW4_r.Rmd file and start working through the analysis.
-**Note that if you open the markdown file in your Downloads, the working directory
-will not be correct. Make sure to only open the markdown file after you have put it
-in the correct working directory.**
 
 **Read in metadata~**
 4. Fill in the file path you used in the R Markdown to load the metadata.
@@ -40,24 +43,24 @@ in the correct working directory.**
 metadata <- read_tsv("C:/Users/Melan/Obsidian/cow_r/03_metadata/cow_metadata.txt")
 ```
 
-**Read in alpha diversity data ~**
+**Read in alpha diversity data**
 6. Fill in the file path you used in the R Markdown to load the shannon data
 ```
 shannon <- read_tsv("C:/Users/Melan/Obsidian/cow_r/02_data/alpha_div/shannon.tsv")
 ```
 
-**Read in beta diversity data ~={red}(1 point)=~**
+**Read in beta diversity data**
 7. Fill in the file path you used in the R Markdown to load the unweighted unifrac
 data
 ```
 uw_unifrac <- read_tsv("uw_unifrac <- read_tsv("C:/Users/Melan/Obsidian/cow_r/02_data/beta_div/unweighted_unifrac.txt")
 ```
 
-**Load in tabulated results ~={red}(1 point)=~**
+**Load in tabulated results**
 8. Fill in the file path you used in the R Markdown to load the
 tabulated_results.tsv
 ```
-tabulated_results <- read_tsv("YOUR FILE PATH HERE")
+tabulated_results <- read_tsv("C:/Users/Melan/Obsidian/cow_r/02_data/taxonomy/tabulated_results.tsv")
 ```
 
 #### Cow Body Site - ANCOM-BC2 in Qiime2
@@ -88,10 +91,8 @@ qiime feature-table filter-samples \--i-table
 cow_metadata_nocontrols.txt \--o-filtered-table
 table_nomitochlorocontrols_gg2_filtered300.qza
 ```
-**Filter Samples ~={red}(1 point)=~**
-
-12. Navigate into the cow tutorial and make a new ancombc2 directory for the ANCOM-
-BC2 analysis and navigate into the ancombc2 directory
+**Filter Samples**
+12. Navigate into the cow tutorial and make a new ancombc2 directory for the ANCOM-BC2 analysis and navigate into the ancombc2 directory
 
 13. Choose the min frequency for sample filtering:
 ```
@@ -105,7 +106,7 @@ table_nomitochlorocontrols_gg2_filtered300.qza \--p-min-frequency YOUR NUMBER HE
 qiime feature-table filter-features \--i-table INPUT TABLE \--p-min-frequency 50
 \--p-min-samples 20 \--o-filtered-table table_5k_abund.qza
 ```
-**Collapse features to genus level ~={red}(1 point)=~**
+**Collapse features to genus level**
 
 15. We will collapse to the genus level to make it easier to interpret the results.
 (Hint: We used 7 for species, so think about which number you would use for genus.)
