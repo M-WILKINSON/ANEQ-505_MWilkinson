@@ -91,35 +91,39 @@ table_nomitochlorocontrols_gg2_filtered300.qza
 **Filter Samples ~={red}(1 point)=~**
 
 12. Navigate into the cow tutorial and make a new ancombc2 directory for the ANCOM-
-BC2 analysis
-- Navigate into the ancombc2 directory
-- Choose the min frequency for sample filtering:
+BC2 analysis and navigate into the ancombc2 directory
+
+13. Choose the min frequency for sample filtering:
 ```
 qiime feature-table filter-samples \--i-table
 table_nomitochlorocontrols_gg2_filtered300.qza \--p-min-frequency YOUR NUMBER HERE
 \--o-filtered-table table_5k.qza
 ```
-**Filter out low abundance and low prevalence ASVs ~={red}(1 point)=~**
+
+14. **Filter out low abundance and low prevalence ASVs ~={red}(1 point)=~**
 ```
 qiime feature-table filter-features \--i-table INPUT TABLE \--p-min-frequency 50
 \--p-min-samples 20 \--o-filtered-table table_5k_abund.qza
 ```
 **Collapse features to genus level ~={red}(1 point)=~**
-- We will collapse to the genus level to make it easier to interpret the results.
+
+15. We will collapse to the genus level to make it easier to interpret the results.
 (Hint: We used 7 for species, so think about which number you would use for genus.)
 ```
 qiime taxa collapse \--i-table table_5k_abund.qza \--i-taxonomy
 ../taxonomy/taxonomy_gg2.qza \--p-level GENUS NUMBER \--o-collapsed-table
 table_5k_abund_GENUS NUMBER.qza
 ```
-**Run ANCOM-BC2 ~={red}(1 point)=~**
+
+16. **Run ANCOM-BC2 ~={red}(1 point)=~**
 ```
 qiime composition ancombc2 \--i-table table_5k_abund_GENUS NUMBER.qza \--m-
 metadata-file cow_metadata_nocontrols.txt \--p-fixed-effects-formula body_site \--
 o-ancombc2-output ancombc2_results_bodysite_genus.qza
 ```
-**Visualize the ANCOM-BC2 results ~={red}(1 point)=~**
-- Generate a barplot to visualize the differentially abundant features.
+
+17. **Visualize the ANCOM-BC2 results ~={red}(1 point)=~**
+ Generate a barplot to visualize the differentially abundant features.
 ```
 qiime composition tabulate \--i-data INPUT FILE \--o-visualization
 ancombc2_bodysite_genus.qzv
