@@ -158,7 +158,7 @@ We can download our alpha and beta diversity metrics and the tabulated_results.
 similar to at least one of the other body sites? Explain why that site looks
 different.
 
-The fecal samples were most different to all the other sample types. ![[Pasted image 20260408115634.png]] In addition to analyzing the taxabarplots, we can also see in the PCoA plot that they are group separately/all on their own in the upper left-hand corner rather than overlapping with other sample group types. 
+The fecal samples were most different to all the other sample types. ![[PCoA_fecal_cow_hw4.png]] In addition to analyzing the taxabarplots, we can also see in the PCoA plot that they are group separately/all on their own in the upper left-hand corner rather than overlapping with other sample group types. 
 
 
 3. When generating the filtered table for ANCOM-BC2, what value did you choose for
