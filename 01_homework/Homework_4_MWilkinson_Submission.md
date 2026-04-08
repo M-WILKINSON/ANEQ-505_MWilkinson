@@ -13,7 +13,7 @@ cow_r
 ├── 04_code
 └── 05_figures
 
-2. Inside the 02_data directory, make the following directories (NOTE: updated designated folder from code to data since these are the input data files)
+2. Inside the 02_data directory, make the following directories (NOTE: I updated the designated folder from code to data since these are the input data files and per mirroring last Friday's decomp tutorial)
 02_data
 ├── alpha_div
 ├── beta_div
