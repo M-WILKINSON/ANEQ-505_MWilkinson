@@ -23,7 +23,7 @@ cow_r
 tabulated_results.tsv, and cow_HW4_r.Rmd files from Canvas and put them in the
 correct directories.
 **What directory should the cow_HW4_r.Rmd file go in?
-*Write the directory here:*
+The rmd file is stored in 04_code because it contains the code script commands we will run in R. 
 
 #### Statistical analysis and figure generation in R
 Now that we have set up the correct file structure and put our files in the
@@ -39,21 +39,21 @@ in the correct working directory.**
 ```
 metadata <- read_tsv("YOUR FILE PATH HERE")
 ```
-**Read in alpha diversity data ~={red}(1 point)=~**
 
+**Read in alpha diversity data ~={red}(1 point)=~**
 6. Fill in the file path you used in the R Markdown to load the shannon data
 ```
 shannon <- read_tsv("YOUR FILE PATH HERE")
 ```
-**Read in beta diversity data ~={red}(1 point)=~**
 
+**Read in beta diversity data ~={red}(1 point)=~**
 7. Fill in the file path you used in the R Markdown to load the unweighted unifrac
 data
 ```
 uw_unifrac <- read_tsv("YOUR FILE PATH HERE")
 ```
-**Load in tabulated results ~={red}(1 point)=~**
 
+**Load in tabulated results ~={red}(1 point)=~**
 8. Fill in the file path you used in the R Markdown to load the
 tabulated_results.tsv
 ```
