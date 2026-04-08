@@ -95,15 +95,20 @@ table_nomitochlorocontrols_gg2_filtered300.qza
 ```
 **Filter Samples**
 12. Navigate into the cow tutorial and make a new ancombc2 directory for the ANCOM-BC2 analysis and navigate into the ancombc2 directory
+```
+mkdir ancombc2  
+  
+cd ancombc2
+```
 
-13. Choose the min frequency for sample filtering:
+12. Choose the min frequency for sample filtering:
 ```
 qiime feature-table filter-samples \--i-table
-table_nomitochlorocontrols_gg2_filtered300.qza \--p-min-frequency YOUR NUMBER HERE
+table_nomitochlorocontrols_gg2_filtered300.qza \--p-min-frequency 1500
 \--o-filtered-table table_5k.qza
 ```
 
-14. **Filter out low abundance and low prevalence ASVs ~={red}(1 point)=~**
+14. **Filter out low abundance and low prevalence ASVs**
 ```
 qiime feature-table filter-features \--i-table INPUT TABLE \--p-min-frequency 50
 \--p-min-samples 20 \--o-filtered-table table_5k_abund.qza
@@ -118,14 +123,14 @@ qiime taxa collapse \--i-table table_5k_abund.qza \--i-taxonomy
 table_5k_abund_GENUS NUMBER.qza
 ```
 
-16. **Run ANCOM-BC2 ~={red}(1 point)=~**
+16. **Run ANCOM-BC2**
 ```
 qiime composition ancombc2 \--i-table table_5k_abund_GENUS NUMBER.qza \--m-
 metadata-file cow_metadata_nocontrols.txt \--p-fixed-effects-formula body_site \--
 o-ancombc2-output ancombc2_results_bodysite_genus.qza
 ```
 
-17. **Visualize the ANCOM-BC2 results ~={red}(1 point)=~**
+17. **Visualize the ANCOM-BC2 results**
  Generate a barplot to visualize the differentially abundant features.
 ```
 qiime composition tabulate \--i-data INPUT FILE \--o-visualization
@@ -135,9 +140,7 @@ ancombc2_barplot_bodysite_genus.qzv
 ```
 
 ## Homework questions: 
-1. Describe one way to get data from your qiime2 outputs into a format that can be
-used for R.
-
+1. Describe one way to get data from your qiime2 outputs into a format that can be used for R.
 
 2. Which body site appeared most distinct in the taxa bar plot, meaning it was not
 similar to at least one of the other body sites? Explain why that site looks
