@@ -13,8 +13,8 @@ cow_r
 ├── 04_code
 └── 05_figures
 
-2. Inside the 04_code directory, make the following directories
-04_code
+2. Inside the 02_data directory, make the following directories (NOTE: updated designated folder from code to data since these are the input data files)
+02_data
 ├── alpha_div
 ├── beta_div
 ├── taxonomy
@@ -33,14 +33,14 @@ correct directories, we can start our cow R analysis.
 **Note that if you open the markdown file in your Downloads, the working directory
 will not be correct. Make sure to only open the markdown file after you have put it
 in the correct working directory.**
-**Read in metadata ~={red}(1 point)=~**
 
-5. Fill in the file path you used in the R Markdown to load the metadata.
+**Read in metadata~**
+4. Fill in the file path you used in the R Markdown to load the metadata.
 ```
 metadata <- read_tsv("YOUR FILE PATH HERE")
 ```
 
-**Read in alpha diversity data ~={red}(1 point)=~**
+**Read in alpha diversity data ~**
 6. Fill in the file path you used in the R Markdown to load the shannon data
 ```
 shannon <- read_tsv("YOUR FILE PATH HERE")
