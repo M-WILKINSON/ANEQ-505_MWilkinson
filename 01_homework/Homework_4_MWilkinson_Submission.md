@@ -177,7 +177,6 @@ than 0.05)?
 
 
 
-
 ## Extra credit~ generate a classification model to see how well we can predict cow body site
 ```
 cd /scratch/alpine/$USER/cow/
