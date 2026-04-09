@@ -174,7 +174,7 @@ We filter out low-frequency samples and low-abundance ASVs in order to clean up 
 5. What was the most enriched genus in skin compared to fecal, and what was the most depleted genus in skin compared to fecal (make sure adjusted p is set to less
 than 0.05)? 
 
-
+Atopostipes is much more abundant in skin than fecal samples, while Streptococcus is less abundant in skin compared to fecal samples.
 
 
 ## Extra credit~ generate a classification model to see how well we can predict cow body site
@@ -212,21 +212,13 @@ Removing controls is important because they don’t represent real samples. Incl
 
 2. What 2 features that are high in fecal samples?
 
-3. What are 2 features that are low in nasal?
+- Crypyobacteroides
+- Faecousia 
 
-4. What is the accuracy of your model, and if the accuracy of the classifier is high, what does that suggest about the microbial compositions of each site?
+2. What are 2 features that are low in nasal?
+
+- Cryptobacteroides
+
+2. What is the accuracy of your model, and if the accuracy of the classifier is high, what does that suggest about the microbial compositions of each site?
 
 The model achieves 88% overall accuracy, far above the 35% baseline, with classification for fecal, nasal, oral, and skin samples, while udder samples show some overlap with skin. This indicates that most body sites have distinct microbial communities, though udder and skin share some similarities.
-
-
-Model Accuracy Table (accuracy_results.qzv):
-|fecal|nasal|oral|skin|udder|Overall Accuracy|
-|---|---|---|---|---|---|
-|fecal|1.0|0.0|0.0|0.0|0.0||
-|nasal|0.0|1.0|0.0|0.0|0.0||
-|oral|0.0|0.0|1.0|0.0|0.0||
-|skin|0.0|0.0|0.0|1.0|0.0||
-|udder|0.0|0.0|0.0|0.666667|0.333333||
-|Overall Accuracy||||||0.882353|
-|Baseline Accuracy||||||0.352941|
-|Accuracy Ratio||||||2.5|
