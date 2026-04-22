@@ -30,3 +30,5 @@ What both visuals are showing is that the majority of the 326 microbial genomes 
 5. Additional analysis
 When I think of complementary or transition foods for babies I typically think of pureed bananas, sweet potatoes, or peas, as opposed to meats so maybe I would suggest having an additional group that includes more plants since we know that eating plants has an effect on gut microbiome diversity. With that said, I don't know what the composition of the formula is and if there are plant derived nutrients in there are they as bioavailable as eating them directly?
 
+6. presented
+7. Figure 7 presents correlation networks linking milk bacteria to components like total protein and fat, with positive (red) and negative (blue) associations. The relationships vary between primiparous and multiparous cows. These differences suggest that variation in the milk microbiome may influence milk quality.
