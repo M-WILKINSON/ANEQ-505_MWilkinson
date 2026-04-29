@@ -1,3 +1,4 @@
+
 1. Olm, et al. Figure 3b:
 Figure 3B shows the percentage of microbial strains detected in mothers and infants that are found only in infants (yellow), only in mothers (green), or shared within mother–infant dyads (pink), and they are grouped by bacterial phylum.  
 
@@ -39,3 +40,13 @@ The red edges indicate positive correlations, meaning that as the abundance of a
 The networks focus on specific genera that either appeared only in one group or showed significant differences in abundance between the two groups. We can see that in the PC group, several genera were positively correlated with total protein levels, suggesting that certain bacteria may enhance the milk protein content.
 
 & the significance of this figure is that the information could be critical for improving milk production strategies based on microbial health.
+
+
+8. Figure 8A
+This figure shows how microbial diversity, especially bacterial diversity is related to different physical and chemical characteristics of the sourdough bread. Specifically, we are looking at pH, acidity, lactic and acetic acid, free amino acids, as well as the loaf's volume. 
+
+The y axis on the right represents the strength of the correlation so blue is strong positive correlation while red is strong negative and the lighter colors means weak or no statistically meaningful relationship. 
+
+& What we can see is that higher bacterial diversity is linked to more fermentation products like lactic acid and amino acids, but actually a smaller loaf volume, so there’s kind of a tradeoff between flavor development and bread's structure/texture. In contrast, the fungal diversity doesn’t seem to play as big of a role here, with only a significant relationship with the PH. 
+
+
