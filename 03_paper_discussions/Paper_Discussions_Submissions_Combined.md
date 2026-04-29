@@ -43,7 +43,7 @@ The networks focus on specific genera that either appeared only in one group or 
 
 
 8. Figure 8A
-This figure shows how microbial diversity, especially bacterial diversity is related to different physical and chemical characteristics of the sourdough bread. Specifically, we are looking at pH, acidity, lactic and acetic acid, free amino acids, as well as the loaf's volume. 
+This figure shows how microbial diversity, especially bacterial diversity is related to different physical and chemical characteristics of the sourdough bread. Specifically, we are looking at pH, acidity, lactic and acetic acid, free amino acids, as well as the loaf's volume and crumb firmness. 
 
 The y axis on the right represents the strength of the correlation so blue is strong positive correlation while red is strong negative and the lighter colors means weak or no statistically meaningful relationship. 
 
