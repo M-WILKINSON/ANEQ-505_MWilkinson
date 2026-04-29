@@ -30,5 +30,12 @@ What both visuals are showing is that the majority of the 326 microbial genomes 
 5. Additional analysis
 When I think of complementary or transition foods for babies I typically think of pureed bananas, sweet potatoes, or peas, as opposed to meats so maybe I would suggest having an additional group that includes more plants since we know that eating plants has an effect on gut microbiome diversity. With that said, I don't know what the composition of the formula is and if there are plant derived nutrients in there are they as bioavailable as eating them directly?
 
-6. presented
-7. Figure 7 presents correlation networks linking milk bacteria to components like total protein and fat, with positive (red) and negative (blue) associations. The relationships vary between primiparous and multiparous cows. These differences suggest that variation in the milk microbiome may influence milk quality.
+6. Presented with Alex
+
+7. Figure 7 depicts co-occurrence correlation networks illustrating relationships between specific bacterial genera in milk and various milk components, such as the total protein for both the PC and MC groups.
+
+The red edges indicate positive correlations, meaning that as the abundance of a specific genus increases, so does the concentration of the milk component, and the blue edges represent negative correlations, where an increase in a genus’s abundance corresponds to a decrease in the milk component.
+
+The networks focus on specific genera that either appeared only in one group or showed significant differences in abundance between the two groups. We can see that in the PC group, several genera were positively correlated with total protein levels, suggesting that certain bacteria may enhance the milk protein content.
+
+& the significance of this figure is that the information could be critical for improving milk production strategies based on microbial health.
