@@ -43,10 +43,10 @@ The networks focus on specific genera that either appeared only in one group or 
 
 
 8. Figure 8A
-This figure shows how microbial diversity, especially bacterial diversity is related to different physical and chemical characteristics of the sourdough bread. Specifically, we are looking at pH, acidity, lactic and acetic acid, free amino acids, as well as the loaf's volume and crumb firmness. 
+This figure shows how microbial diversity is related to different physical and chemical characteristics of the sourdough bread. Specifically, we are looking at pH, acidity, lactic and acetic acid, free amino acids, as well as the loaf's volume and crumb firmness. 
 
-The y axis on the right represents the strength of the correlation so blue is strong positive correlation while red is strong negative and the lighter colors means weak or no statistically meaningful relationship. 
+The y axis on the right represents the strength of the correlation so blue is strong positive correlation while red is strong negative and the lighter colors just means weak or no statistically meaningful relationship. 
 
-& What we can see is that higher bacterial diversity is linked to more fermentation products like lactic acid and amino acids, but actually a smaller loaf volume, so there’s kind of a tradeoff between flavor development and bread's structure/texture. In contrast, the fungal diversity doesn’t seem to play as big of a role here, with only a significant relationship with the PH. 
+& What we can see is that higher bacterial diversity is linked to more fermentation products like lactic acid and amino acids, but actually a smaller loaf volume, so there seems to be a bit of a tradeoff between flavor development and bread's structure/texture. In contrast, the fungal diversity doesn’t seem to play as big of a role here, with only a significant relationship with the PH. 
 
 
